@@ -1,0 +1,137 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 7%;
+    background: linear-gradient(45deg, black, darkgray, white);
+}
+
+.logo {
+    width: 80px;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: darkslategray;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(230, 104, 59);
+}
+
+/* Main Content */
+.container {
+    text-align: center;
+    padding: 6% 7%;
+    min-height: 100vh;
+    background: repeating-linear-gradient(45deg, black, darkgray, white);
+}
+
+.info h1 {
+    font-size: 60px;
+    color: black;
+}
+
+.info h3 {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.info span {
+    color: rgba(37, 119, 215, 1);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    color: white;
+    background: rgba(37, 119, 215, 1);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: rgb(59, 174, 209);
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #3857D0;
+    font-size: 40px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: rgb(59, 174, 209);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info h1 {
+        font-size: 45px;
+    }
+
+    .info h3 {
+        font-size: 16px;
+    }
+
+    .social-icons a {
+        font-size: 30px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .info h1 {
+        font-size: 35px;
+    }
+
+    .info h3 {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+}
