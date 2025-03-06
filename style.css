@@ -135,3 +135,290 @@ nav ul li a:hover {
         padding: 10px 16px;
     }
 }
+
+/* =======================
+   About Page Styles
+   ======================= */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7% 10%;
+    min-height: 100vh;
+    background: repeating-linear-gradient(45deg, black, darkgray, white);
+}
+
+.about-content {
+    max-width: 50%;
+}
+
+.about-content h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content span {
+    color: rgba(37, 119, 215, 1);
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background: rgba(37, 119, 215, 1);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: rgb(59, 174, 209);
+}
+
+/* About Image */
+.about-image img {
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 90%;
+    }
+
+    .about-image img {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+
+/* =======================
+   Skills Page Styles
+   ======================= */
+.skills-container {
+    padding: 7% 10%;
+    min-height: 100vh;
+    background: repeating-linear-gradient(45deg, black, darkgray, white);
+    color: #333;
+}
+
+.skills-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.skills-content h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.skills-content h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    color: rgba(37, 119, 215, 1);
+}
+
+.skills-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.skill-list, .certificate-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: auto;
+    max-width: 600px;
+}
+
+.skill-list li, .certificate-list li {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.skill-list li strong {
+    color: #3857D0;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: rgba(37, 119, 215, 1);
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 30px auto;  /* Centering horizontally */
+    display: block;      /* Allows margin auto to work */
+    text-align: center;
+    width: fit-content;  /* Ensures the button wraps around the text */
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: rgb(59, 174, 209);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-content {
+        text-align: center;
+    }
+    
+    .skill-list, .certificate-list {
+        text-align: center;
+    }
+}
+
+
+/* =======================
+   Certificates Section
+   ======================= */
+.certificates-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.certificates-section h2 {
+    font-size: 28px;
+    color: rgba(37, 119, 215, 1);
+    margin-bottom: 20px;
+}
+
+.certificate-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.certificate-item {
+    width: 250px;
+    text-align: center;
+}
+
+.certificate-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.certificate-item img:hover {
+    transform: scale(1.05);
+}
+
+.certificate-item p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .certificate-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* =======================
+   Contact Page Styles
+   ======================= */
+.contact-container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-container h1 {
+  font-size: 32px;
+  color: rgba(37, 119, 215, 1);
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Contact Form */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  margin-top: 15px;
+}
+
+/* Contact Info */
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-info p {
+  font-size: 18px;
+}
+
+/* Social Media Links */
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  font-size: 30px;
+  margin: 0 10px;
+  color: #3857D0;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: rgb(59, 174, 209);
+}
+
+
+
